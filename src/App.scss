@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+// square
+.square {
+  box-sizing: border-box;
+  height: 40px;
+  width: 10%;
+  border: solid 1px mediumpurple;
+}
+
+.board {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
