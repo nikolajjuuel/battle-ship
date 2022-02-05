@@ -38,15 +38,35 @@
 }
 
 // square
-.square {
+.ocean {
   box-sizing: border-box;
   height: 40px;
   width: 10%;
-  border: solid 1px mediumpurple;
+  border: solid 1px mediumturquoise;
 }
 
 .board {
   width: 40%;
   display: flex;
   flex-wrap: wrap;
+}
+
+.destroyer {
+  width: 40%;
+}
+.destroyer-box {
+  border: solid 1px mediumvioletred;
+  box-sizing: border-box;
+  height: 40px;
+  width: 10%;
+}
+
+.hit {
+  height: 40px;
+  width: 10%;
+  border: solid 1px mediumvioletred;
+}
+
+.opponent {
+  background-color: blue;
 }

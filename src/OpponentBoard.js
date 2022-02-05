@@ -1,9 +1,7 @@
 import Square from './Square'
-import { useState } from 'react';
-const PlayerBoard = () => {
-  const pieces = [];
 
-  console.log('pieces', pieces)
+const OpponentBoard = () => {
+  const pieces = [];
   const size = 400;
   const width = 40;
   const columns = Math.floor(size / width)
@@ -11,16 +9,16 @@ const PlayerBoard = () => {
 
   for (let x = 0; x < rows; x++) {
     for (let y = 0; y < columns; y++)
-      pieces.push(<Square x={x} y={y} key={`${x},${y}`} name={'ocean'} target={true} />)
+      pieces.push(<Square x={x} y={y} key={`${x},${y}`} />)
 
   }
 
   return (
-    <div className="board">
+    <div className="board opponent">
       {pieces}
     </div>
   )
 
 }
 
-export default PlayerBoard;
+export default OpponentBoard;
